@@ -1,0 +1,72 @@
+name: Build and Deploy Resume
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "resume.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install resumed and themes
+        run: |
+          npm install resumed jsonresume-theme-tech
+
+      - name: Validate resume JSON
+        run: |
+          npx resumed validate resume.json
+
+      - name: Generate resume HTML
+        run: |
+          npx resumed render resume.json --output resume.html --theme jsonresume-theme-tech
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Create deployment directory
+        run: |
+          mkdir -p deploy
+          cp resume.html deploy/index.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "deploy"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Commit generated HTML
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add resume.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "Regenerate HTML from resume.json"
+          git push
