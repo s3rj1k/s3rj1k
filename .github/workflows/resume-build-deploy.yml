@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "resume.json"
+      - ".github/workflows/resume-build-deploy.yml"
   workflow_dispatch:
 
 permissions:
@@ -35,7 +36,7 @@ jobs:
 
       - name: Install resumed and themes
         run: |
-          npm install resumed jsonresume-theme-tech
+          npm install resumed jsonresume-theme-tech puppeteer
 
       - name: Validate resume JSON
         run: |
@@ -45,6 +46,11 @@ jobs:
         run: |
           npx resumed render resume.json --output resume.html --theme jsonresume-theme-tech
 
+      # Needs: https://github.com/rbardini/resumed/pull/21
+      - name: Generate resume PDF
+        run: |
+          npx resumed export resume.json --output resume.pdf --theme jsonresume-theme-tech --puppeteer-arg="--no-sandbox"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -52,9 +58,10 @@ jobs:
         run: |
           mkdir -p deploy
           cp resume.html deploy/index.html
+          cp resume.pdf deploy/cv.pdf
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "deploy"
 
