@@ -397,6 +397,22 @@
       "url": "https://verify.skilljar.com/c/a453spzoqqvo"
     }
   ],
+  "publications": [
+    {
+      "name": "Using k0rdent MultiClusterService Template for Valkey on Kubernetes",
+      "publisher": "Valkey",
+      "releaseDate": "2025-07-21",
+      "url": "https://valkey.io/blog/valkey-on-k0rdent/",
+      "summary": "Tutorial demonstrates how to use k0rdent's MultiClusterService template to simplify the deployment and management of Valkey across multiple Kubernetes clusters in a multi-cloud environment."
+    },
+    {
+      "name": "Deploying OCI Container Images to Bare Metal with a Custom IPA Hardware Manager",
+      "publisher": "Metal3",
+      "releaseDate": "2026-02-01",
+      "url": "https://metal3.io/blog/2026/02/01/Deploying_OCI_Images_with_Custom_IPA_Hardware_Manager.html",
+      "summary": "Guide shows how to deploy Debian-based OCI container images directly to bare metal using a custom Metal3 hardware manager that supports EFI boot, LVM storage, and optional RAID1 redundancy."
+    }
+  ],
   "education": [
     {
       "institution": "Polish-Japanese Academy of Information Technology",
