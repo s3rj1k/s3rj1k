@@ -1,6 +1,10 @@
 {
   "meta": {
-    "theme": "professional"
+    "theme": "minimal-classy",
+    "language": "en",
+    "disableImageStyling": true,
+    "selfContainedImages": true,
+    "customStyles": "img[alt=\"Serhii Ivanov\"] { display: none !important; }"
   },
   "basics": {
     "name": "Serhii Ivanov",

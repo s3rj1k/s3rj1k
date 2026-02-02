@@ -28,16 +28,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install resumed and themes
         run: |
-          npm install resumed jsonresume-theme-tech puppeteer
+          npm install resumed jsonresume-theme-minimal-classy puppeteer
 
       - name: Validate resume JSON
         run: |
@@ -45,12 +45,12 @@ jobs:
 
       - name: Generate resume HTML
         run: |
-          npx resumed render resume.json --output resume.html --theme jsonresume-theme-tech
+          npx resumed render resume.json --output resume.html --theme jsonresume-theme-minimal-classy
 
       # Needs: https://github.com/rbardini/resumed/pull/21
       - name: Generate resume PDF
         run: |
-          npx resumed export resume.json --output resume.pdf --theme jsonresume-theme-tech --puppeteer-arg="--no-sandbox"
+          npx resumed export resume.json --output resume.pdf --theme jsonresume-theme-minimal-classy --puppeteer-arg="--no-sandbox"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
