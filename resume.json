@@ -371,6 +371,30 @@
       "date": "2025-12-26",
       "issuer": "OpenEDG C++ Institute",
       "url": "https://www.linkedin.com/learning/certificates/85df3977f1a11f3935b32f79d005e2b0ff01ff2253a7155f5e44cff3adb45867"
+    },
+    {
+      "name": "Claude Code in Action",
+      "date": "2026-01-26",
+      "issuer": "Anthropic Education",
+      "url": "https://verify.skilljar.com/c/weg2dpcevk3n"
+    },
+    {
+      "name": "Introduction to Model Context Protocol",
+      "date": "2026-01-26",
+      "issuer": "Anthropic Education",
+      "url": "https://verify.skilljar.com/c/e4bsgqz3n7tr"
+    },
+    {
+      "name": "Model Context Protocol: Advanced Topics",
+      "date": "2026-01-29",
+      "issuer": "Anthropic Education",
+      "url": "https://verify.skilljar.com/c/vstyhe4zaykq"
+    },
+    {
+      "name": "Building with the Claude API",
+      "date": "2026-02-01",
+      "issuer": "Anthropic Education",
+      "url": "https://verify.skilljar.com/c/a453spzoqqvo"
     }
   ],
   "education": [
