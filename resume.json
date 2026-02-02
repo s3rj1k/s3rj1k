@@ -4,7 +4,7 @@
     "language": "en",
     "disableImageStyling": true,
     "selfContainedImages": true,
-    "customStyles": "img[alt=\"Serhii Ivanov\"] { display: none !important; }"
+    "customStyles": "img[alt=\"Serhii Ivanov\"] { display: none !important; } .fa-GitHub::before { content: \"\\f09b\" !important; font-family: \"Font Awesome 6 Brands\" !important; color: inherit !important; } .fa-LinkedIn::before { content: \"\\f0e1\" !important; font-family: \"Font Awesome 6 Brands\" !important; color: inherit !important; }"
   },
   "basics": {
     "name": "Serhii Ivanov",
@@ -12,14 +12,17 @@
     "label": "Senior Software Engineer | Golang | Kubernetes | SRE | DevOps",
     "image": "https://avatars.githubusercontent.com/u/11349489?v=4",
     "summary": "Proactive software engineer with Golang as language of choice. I am used to wearing many hats and generally very flexible when investigating new roles.",
-    "website": "https://www.linkedin.com/in/s3rj1k/",
-    "url": "https://www.linkedin.com/in/s3rj1k/",
     "email": "evasive.gyron@gmail.com",
     "location": {
       "city": "Cracow",
       "countryCode": "PL"
     },
     "profiles": [
+      {
+        "url": "https://www.linkedin.com/in/s3rj1k/",
+        "username": "s3rj1k",
+        "network": "LinkedIn"
+      },
       {
         "url": "https://github.com/s3rj1k",
         "username": "s3rj1k",
