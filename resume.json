@@ -488,6 +488,23 @@
   ],
   "work": [
     {
+      "name": "Mirantis",
+      "position": "Senior Software Engineer",
+      "location": "Remote",
+      "startDate": "2024-10-01",
+      "highlights": [
+        "Open-source contribution to various projects, most prominently CAPA, ProjectSveltos, Metal3, Tinkerbell, k0s, k0rdent.",
+        "Created a DHCPv4 server that integrates with Metal3 in pure Golang for dynamic Kubernetes cluster environments.",
+        "Created a dedicated controller for Metal3 that enables advanced noDHCP provisioning by injecting networking config and arbitrary files into initramfs.",
+        "Pioneered early KubeVirt integration with NVIDIA DOCA and conducted deep research on DOCA/DPU implementation.",
+        "Author of the k0rdent out-of-tree templates feature and maintainer of the out-of-tree templates repository.",
+        "Conducted constant research and development for useful features from different OSS projects."
+      ],
+      "summary": "Contributing to multiple open-source infrastructure projects with focus on Kubernetes cluster management, bare-metal provisioning, and network virtualization.",
+      "website": "https://www.mirantis.com/",
+      "pinned": false
+    },
+    {
       "name": "SignalWire",
       "position": "SRE | DevOps",
       "location": "Remote",
