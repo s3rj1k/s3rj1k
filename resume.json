@@ -418,6 +418,13 @@
       "releaseDate": "2026-02-01",
       "url": "https://metal3.io/blog/2026/02/01/Deploying_OCI_Images_with_Custom_IPA_Hardware_Manager.html",
       "summary": "Guide shows how to deploy Debian-based OCI container images directly to bare metal using a custom Metal3 hardware manager that supports EFI boot, LVM storage, and optional RAID1 redundancy."
+    },
+    {
+      "name": "Modern BareMetal Provisioning Without PXE",
+      "publisher": "Mirantis",
+      "releaseDate": "2026-03-23",
+      "url": "https://t0.mirantis.com/modern-baremetal-provisioning",
+      "summary": "Baremetal provisioning tools carry decades of PXE design legacy, but a system built for modern server hardware can be dramatically simpler."
     }
   ],
   "education": [
