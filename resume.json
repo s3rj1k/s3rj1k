@@ -425,6 +425,13 @@
       "releaseDate": "2026-03-23",
       "url": "https://t0.mirantis.com/modern-baremetal-provisioning",
       "summary": "Baremetal provisioning tools carry decades of PXE design legacy, but a system built for modern server hardware can be dramatically simpler."
+    },
+    {
+      "name": "Modern BareMetal Provisioning Without DHCP",
+      "publisher": "Mirantis",
+      "releaseDate": "2026-04-09",
+      "url": "https://t0.mirantis.com/modern-baremetal-provisioning-without-dhcp",
+      "summary": "When BMC virtual media isn't an option, use lightweight UEFI application for chainloading."
     }
   ],
   "education": [
