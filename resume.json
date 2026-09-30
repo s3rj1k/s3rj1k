@@ -438,6 +438,13 @@
       "releaseDate": "2026-04-09",
       "url": "https://t0.mirantis.com/modern-baremetal-provisioning-without-dhcp",
       "summary": "When BMC virtual media isn't an option, use lightweight UEFI application for chainloading."
+    },
+    {
+      "name": "Modern BareMetal Provisioning When Redfish Implementations Disagree",
+      "publisher": "Mirantis",
+      "releaseDate": "2026-09-30",
+      "url": "https://t0.mirantis.com/modern-baremetal-provisioning-redfish-proxy",
+      "summary": "A design for a Redfish proxy that handles vendor API differences through scripts."
     }
   ],
   "education": [
